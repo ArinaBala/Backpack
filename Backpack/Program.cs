@@ -1,13 +1,24 @@
 ﻿using System;
-using System.Linq;
 
 namespace Backpack
 {
     public class BagItem
     {
-        public string Title { get; set; }
-        public double Capacity { get; set; }
-        public double Weight { get; set; }
+        public string Title {
+            get; 
+            
+            set; 
+        }
+        public double Capacity 
+        {
+            get;
+            set; 
+        }
+        public double Weight 
+        {
+            get;
+            set;
+        }
 
         public BagItem(string title, double capacity, double weight)
         {
@@ -24,7 +35,10 @@ namespace Backpack
 
     public class Laptop : BagItem
     {
-        public double Diagonal { get; set; }
+        public double Diagonal 
+        {
+        get;
+        set; }
 
         public Laptop(string title, double capacity, double weight, double diagonal)
             : base(title, capacity, weight)
@@ -40,7 +54,11 @@ namespace Backpack
 
     public class WaterBottle : BagItem
     {
-        public string MaterialType { get; set; }
+        public string MaterialType 
+        {
+        get;
+        set;
+        }
 
         public WaterBottle(string title, double capacity, double weight, string materialType)
             : base(title, capacity, weight)
@@ -56,7 +74,11 @@ namespace Backpack
 
     public class Book : BagItem
     {
-        public int PageCount { get; set; }
+        public int PageCount 
+        {
+        get;
+        set;
+        }
 
         public Book(string title, double capacity, double weight, int pageCount)
             : base(title, capacity, weight)
@@ -72,7 +94,11 @@ namespace Backpack
 
     public class Clothing : BagItem
     {
-        public string Size { get; set; }
+        public string Size 
+        {
+        get; 
+        set;
+        }
 
         public Clothing(string title, double capacity, double weight, string size)
             : base(title, capacity, weight)
@@ -92,11 +118,31 @@ namespace Backpack
     {
         private BagItem[] items = new BagItem[0];
 
-        public string Hue { get; set; }
-        public string Producer { get; set; }
-        public string Material { get; set; }
-        public double Mass { get; set; }
-        public double LimitVolume { get; set; }
+        public string Hue 
+        {
+            get;
+            set;
+        }
+        public string Producer 
+        {
+            get;
+            set;
+        }
+        public string Material 
+        {
+            get;
+            set;
+        }
+        public double Mass 
+        {
+            get;
+            set;
+        }
+        public double LimitVolume 
+        {
+            get;
+            set;
+        }
 
         public BagItem[] Items => items;
 
